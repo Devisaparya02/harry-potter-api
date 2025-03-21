@@ -39,5 +39,5 @@ Endpoint: /api/characters/
 Description: Fetch all Harry Potter characters.
 ```
 
-Let me know if you need any modifications! 😊
+Let me know if you need any modifications! 
 
