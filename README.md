@@ -179,7 +179,7 @@ Update details of a specific character by ID.
   ```
   PUT http://127.0.0.1:8000/api/characters/51/
   ```
-  Body Head Aurorv
+  Body 
   ```
   {
         "role": "Head Auror",
