@@ -109,20 +109,17 @@ Response: Details of the character.
 
 Example Request:
 ```
-GET http://127.0.0.1:8000/api/characters/6/
+GET http://127.0.0.1:8000/api/characters/53/
 ```
 Example Response:
 ```
 {
-    "id": 6,
-    "name": "Harry Potter",
-    "house": {
-        "id": 1,
-        "name": "Gryffindor"
-    },
-    "role": "Head Auror",
-    "wand": "Holly and Phoenix Feather",
-    "patronus": "Stag"
+    "id": 53,
+    "role": "student",
+    "name": "Ron Weasley",
+    "wand": "Willow and Unicorn Hair",
+    "patronus": "Jack Russell Terrier",
+    "house": 1
 }
 ```
 ### 3. Filter Characters
@@ -145,16 +142,13 @@ Example Requests:
 Filter by house:
 
 ```
-GET http://127.0.0.1:8000/api/characters/?house__name=Gryffindor    
+GET http://127.0.0.1:8000/api/characters/?house=20
 ```
 Filter by role:
 ```
 GET http://127.0.0.1:8000/api/characters/?role=student
 ```
-Search by name:
-```
-GET http://127.0.0.1:8000/api/characters/?search=Harry
-```
+
 ### 4. POST a New Character
 
 Add a new character to the directory.
@@ -173,12 +167,14 @@ POST http://127.0.0.1:8000/api/characters/
 Body:
 ```
 {
-    "name": "Severus Snape",
-    "house_id": 3,
-    "role": "professor",
-    "wand": "Unknown",
-    "patronus": "Doe"
-}     
+    "name": "Draco Malfoy",
+    "house": 2,
+    "role": "student",
+    "wand": "Hawthorn and Unicorn Hair",
+    "patronus": "None"
+}
+
+    
 ```
 ### 5. PUT (Update) a Character
 
@@ -193,17 +189,17 @@ Update details of a specific character by ID.
   Example Request: 
   
   ```
-  PUT http://127.0.0.1:8000/api/characters/6/
+  PUT http://127.0.0.1:8000/api/characters/51/
   ```
-  Body
+  Body Head Aurorv
   ```
   {
-    "name": "Harry Potter",
-    "house_id": 1,
-    "role": "student",  // Update the role to "student"
-    "wand": "Holly and Phoenix Feather",
-    "patronus": "Stag"
-  }
+        "role": "Head Auror",
+        "name": "Ron Weasley",
+        "wand": "Willow and Unicorn Hair",
+        "patronus": "Jack Russell Terrier",
+        "house": 20
+    }
   ```
 ### 6. DELETE a Character
 
@@ -217,7 +213,7 @@ Update details of a specific character by ID.
   
   Example Request: 
   ```
-  DELETE http://127.0.0.1:8000/api/characters/6/
+  DELETE http://127.0.0.1:8000/api/characters/51/
   ```
 
 
