@@ -12,4 +12,11 @@ class CharacterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Character
-        fields = ['id', 'name', 'house', 'house_id', 'role', 'wand', 'patronus']
+        fields = "__all__"
+
+class CharacterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Character
+        fields = '__all__'  # Ensure role is included
+
+    role = serializers.CharField(required=True, allow_blank=False)
