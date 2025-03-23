@@ -172,15 +172,15 @@ POST http://127.0.0.1:8000/api/characters/
 ```
 
 Body:
-       ```
-       {
+```
+{
           "name": "Severus Snape",
           "house_id": 3,
           "role": "professor",
           "wand": "Unknown",
           "patronus": "Doe"
-      }
-       ```
+      }     
+```
 ### 5. PUT (Update) a Character
 
 Update details of a specific character by ID.
