@@ -156,16 +156,23 @@ GET http://127.0.0.1:8000/api/characters/?search=Harry
 ```
 ### 4. POST a New Character
 Add a new character to the directory.
+
 URL: /api/characters/
+
 Method: POST
+
 Body: JSON object with character details.
+
 Required Fields:
+
       name: The name of the character.
       house_id: The ID of the house the character belongs to.
       role: The role of the character (e.g., student, professor).
 Optional Fields:
+
       wand: The wand of the character.
       patronus: The patronus of the character.
+      
 Example Request:
        ```
         POST http://127.0.0.1:8000/api/characters/
