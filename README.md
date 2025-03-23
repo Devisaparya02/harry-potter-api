@@ -53,7 +53,7 @@ Example Response:
 ```
 [
     {
-        "id": 1,
+        "id": 6,
         "name": "Harry Potter",
         "house": {
             "id": 1,
@@ -64,7 +64,7 @@ Example Response:
         "patronus": "Stag"
     },
     {
-        "id": 2,
+        "id": 7,
         "name": "Hermione Granger",
         "house": {
             "id": 1,
@@ -73,6 +73,28 @@ Example Response:
         "role": "student",
         "wand": "Vine and Dragon Heartstring",
         "patronus": "Otter"
+    },
+    {
+        "id": 8,
+        "name": "Ron Weasley",
+        "house": {
+            "id": 3,
+            "name": "Ron Weasley"
+        },
+        "role": "student",
+        "wand": "Willow and Unicorn Hair",
+        "patronus": "Jack Russell Terrier"
+    },
+    {
+        "id": 9,
+        "name": "Albus Dumbledore",
+        "house": {
+            "id": 2,
+            "name": "Harry Potter"
+        },
+        "role": "headmaster",
+        "wand": "Elder Wand",
+        "patronus": "Phoenix"
     }
 ]
 ```
