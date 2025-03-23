@@ -37,6 +37,7 @@ INSTALLED_APPS = INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
     
     # Installed Apps
     'rest_framework',  # Django REST Framework
