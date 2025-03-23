@@ -53,48 +53,36 @@ Example Response:
 ```
 [
     {
-        "id": 6,
-        "name": "Harry Potter",
-        "house": {
-            "id": 1,
-            "name": "Gryffindor"
-        },
-        "role": "Head Auror",
-        "wand": "Holly and Phoenix Feather",
-        "patronus": "Stag"
-    },
-    {
-        "id": 7,
-        "name": "Hermione Granger",
-        "house": {
-            "id": 1,
-            "name": "Gryffindor"
-        },
-        "role": "student",
-        "wand": "Vine and Dragon Heartstring",
-        "patronus": "Otter"
-    },
-    {
-        "id": 8,
-        "name": "Ron Weasley",
-        "house": {
-            "id": 3,
-            "name": "Ron Weasley"
-        },
-        "role": "student",
-        "wand": "Willow and Unicorn Hair",
-        "patronus": "Jack Russell Terrier"
-    },
-    {
-        "id": 9,
-        "name": "Albus Dumbledore",
-        "house": {
-            "id": 2,
-            "name": "Harry Potter"
-        },
+        "id": 51,
         "role": "headmaster",
-        "wand": "Elder Wand",
-        "patronus": "Phoenix"
+        "name": "Ron Weasley",
+        "wand": "Willow and Unicorn Hair",
+        "patronus": "Jack Russell Terrier",
+        "house": 20
+    },
+    {
+        "id": 52,
+        "role": "student",
+        "name": "Ron Weasley",
+        "wand": "Willow and Unicorn Hair",
+        "patronus": "Jack Russell Terrier",
+        "house": 20
+    },
+    {
+        "id": 53,
+        "role": "student",
+        "name": "Ron Weasley",
+        "wand": "Willow and Unicorn Hair",
+        "patronus": "Jack Russell Terrier",
+        "house": 1
+    },
+    {
+        "id": 54,
+        "role": "student",
+        "name": "Hermione Granger",
+        "wand": "Vine and Dragon Heartstring",
+        "patronus": "Otter",
+        "house": 1
     }
 ]
 ```
