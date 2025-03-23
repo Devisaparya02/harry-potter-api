@@ -111,7 +111,7 @@ Example Response:
 }
 ```
 ### 3. Filter Characters
-Filter characters by house, role, or search by name.
+Filter characters by house, role.
 
 URL: /api/characters/?<filter>=<value>
 
@@ -123,7 +123,7 @@ house__name: Filter by house name (e.g., Gryffindor).
 
 role: Filter by role (e.g., student, professor).
 
-search: Search by character name (e.g., Harry).
+
 
 Example Requests:
 
