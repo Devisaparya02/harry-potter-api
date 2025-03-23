@@ -139,6 +139,7 @@ house__name: Filter by house name (e.g., Gryffindor).
 role: Filter by role (e.g., student, professor).
 
 search: Search by character name (e.g., Harry).
+
 Example Requests:
 
 Filter by house:
@@ -155,6 +156,7 @@ Search by name:
 GET http://127.0.0.1:8000/api/characters/?search=Harry
 ```
 ### 4. POST a New Character
+
 Add a new character to the directory.
 
 URL: /api/characters/
@@ -164,14 +166,17 @@ Method: POST
 Body: JSON object with character details.
 
 Required Fields:
-
-      name: The name of the character.
-      house_id: The ID of the house the character belongs to.
-      role: The role of the character (e.g., student, professor).
+  name: The name of the character.
+  
+  house_id: The ID of the house the character belongs to.
+  
+  role: The role of the character (e.g., student, professor).
+  
 Optional Fields:
 
-      wand: The wand of the character.
-      patronus: The patronus of the character.
+   wand: The wand of the character.
+      
+   patronus: The patronus of the character.
       
 Example Request:
        ```
@@ -188,12 +193,17 @@ Body:
       }
        ```
 ### 5. PUT (Update) a Character
+
 Update details of a specific character by ID.
 
   URL: /api/characters/<id>/
+  
   Method: PUT
+  
   Body: JSON object with updated character details.
+  
   Example Request: 
+  
   ```
   PUT http://127.0.0.1:8000/api/characters/6/
   ```
@@ -208,10 +218,15 @@ Update details of a specific character by ID.
   }
   ```
 ### 6. DELETE a Character
+
   Delete a specific character by ID.
+  
   URL: /api/characters/<id>/
+  
   Method: DELETE
+  
   Response: 204 No Content if successful.
+  
   Example Request: 
   ```
   DELETE http://127.0.0.1:8000/api/characters/6/
